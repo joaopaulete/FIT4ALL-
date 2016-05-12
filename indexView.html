@@ -1,0 +1,176 @@
+    
+	<script src="js/myscript.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/instafeed1.min.js"></script>
+    
+    <script type="text/javascript">
+    var userFeed = new Instafeed1({
+        get: 'user',
+        userId: '1818588085',
+        limit: '12',
+        accessToken: '1818588085.da5aa81.6222cc6221f5442b9a0627edbb39e143'
+    });
+    userFeed.run();
+</script>
+	
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider ">
+				<ul class="slides">
+					<li class="slide1">
+						<div style="color:white" class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">AVALIAÇÃO </p>
+							<p class="title2 captionDelay4 FromTop">FÍSICA</p>
+							<p class="title3 captionDelay6 FromTop">GRATUITA</p>
+						</div>
+						<a class="slide_btn FromRight" ui-sref="avaliacaogratuita" >SABER MAIS</a>
+                        </li>
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">SMALL</p>
+							<p class="title2 captionDelay4 FromLeft">GROUP</p>
+							<p class="title3 captionDelay2 FromLeft">TRAINING</p>
+						</div>
+						<a class="slide_btn FromRight" ui-sref="sgt" >SABER MAIS</a>
+					</li>
+					<li class="slide3">
+						<div style="color:#1c1c1c" class="flex_caption1">
+							<p class="title1 captionDelay1 FromBottom">FIT</p>
+							<p class="title2 captionDelay2 FromBottom">4ALL</p>
+                            <p class="title3 captionDelay3 FromBottom">OUTDOOR</p>
+						</div>
+						<a class="slide_btn FromRight" ui-sref="fit4alloutdoor" >SABER MAIS</a>
+						
+						<!-- VIDEO BACKGROUND
+						<a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+						 -->
+					</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/fit4all/slider/fit3xs.jpg" alt="" /></li>
+					<li><img src="images/fit4all/slider/fit7xs.jpg" alt="" /></li>
+					<li><img src="images/fit4all/slider/fit8xs.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+<!-- ABOUT -->
+		<section id="servicos">
+			
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row desafio">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 col-ss-12 margbot30">
+                            <img class="dsfimg" src="images/fit4all/desafio.png">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-ss-12 margbot30">
+                            <p class="txtDsf">DESAFIO DA SEMANA</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-ss-12 margbot30">
+                            <a class="dsf_btn " ui-sref="desafio" >COMEÇA JÁ</a>
+                        </div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
+			
+			<!-- SERVIÇOS -->
+			<div class="cleancode_block">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					<!-- SERVIÇOS TAB -->
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active clearfix" id="tab1">
+							<p class="title"><b>Treino</b> Personalizado</p>
+							<span>O treino personalizado com a FIT4ALL é o melhor serviço para atingir os resultados que precisa.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab2">
+							<p class="title"><b>Small</b> Group Training</p>
+							<span>Uma óptima opção para quem não pretende treino personalizado indovidual mas ainda assim pretende ser acompanhado de uma forma rigorosa e personalizada.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab3">
+							<p class="title"><b>FIT4ALLOUTDOOR</b></p>
+							<span>Este projecto não pretende só fazer com que emagreça/ganhe massa muscular, mas sim que aprenda e interiorize um novo estilo de vida, mais activo e mais saudável.</span>
+						</div>
+					</div>
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Treino Personalizado</span></a></li>
+						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Small Group Training</span></a></li>
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>FIT4ALLOUTDOOR</span></a></li>
+					</ul><!-- SERVIÇOS TAB -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVIÇOS -->
+        
+			
+			<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+                            <h3><b><span style="color:#005A31">Segue-nos no Instagram</span><span style="color:rgb(153, 194, 29)"> #fit4alltraining</span></b></h3>
+							<div id="instafeed1"></div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/fit4all/insta.png" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- NEWS -->
+		<section id="news">
+		<!-- SERVIÇOS -->
+			<div class="cleancode_block">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					<!-- CONTAINER -->
+			<div class="container">
+				<h2 class="quotes"><b>FIT4ALL |</b> Stay Fit, Stay Healthy.</h2>
+				
+				<!-- TESTIMONIALS -->
+				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TESTIMONIALS SLIDER -->
+					<div class="owl-demo owl-carousel testim_slider">
+						
+						<!-- TESTIMONIAL1 -->
+						<div class="item">
+							<div class="testim_content">“You dream. You plan. You reach. There will be obstacles. There will be doubters. There will be mistakes. But with hard work, with belief, with confidence and trust in yourself and those around you, there are no limits.”</div>
+							<div class="testim_author quotes">—  Michael Phelps, <b>Professional Swimmer and 18-time Olympic Gold Medalist</b></div>
+						</div><!-- TESTIMONIAL1 -->
+						
+						<!-- TESTIMONIAL2 -->
+						<div class="item">
+							<div class="testim_content">“Your health account, your bank account, they’re the same thing. The more you put in, the more you can take out. Exercise is King and Nutrition is Queen. Together you have a Kingdom.”</div>
+							<div class="testim_author quotes">—  Jack LaLanne, <b>Bodybuilder also known as the “Godfather of Fitness”</b></div>
+						</div><!-- TESTIMONIAL2 -->
+						
+						<!-- TESTIMONIAL3 -->
+						<div class="item">
+							<div class="testim_content">“Some people want it to happen, some wish it would happen, others make it happen.”</div>
+							<div class="testim_author quotes">—  Michael Jordan, <b>6-Time NBA Championship Winner</b></div>
+						</div><!-- TESTIMONIAL3 -->
+					</div><!-- TESTIMONIALS SLIDER -->
+				</div><!-- //TESTIMONIALS -->
+				</div><!-- //CONTAINER -->	
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVIÇOS -->
+        </section>
+	

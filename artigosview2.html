@@ -1,0 +1,25 @@
+<div>
+    <div ng-repeat="artigo in artigos.slice(10, 20)">
+        <div class="blog_post margbot50 clearfix">
+            <div class="blog_post_img" style="background-color:white; text-align:center;"><a ui-sref="{{artigo.urlArtigo}}"><img ng-src="{{artigo.imgArtigo}}" alt="" /></a></div>
+            <div class="blog_post_descr">
+                <div class="blog_post_date">{{artigo.dataArtigo}}</div>
+                <a class="blog_post_title" ui-sref="{{artigo.urlArtigo}}" >{{artigo.titleArtigo}}</a>
+                <ul class="blog_post_info">
+                    <li><a ui-sref="{{artigo.urlArtigo}}" >{{artigo.autorArtigo}}</a></li>
+                    <li><a ui-sref="{{artigo.urlArtigo}}" >{{artigo.empresaArtigo}}</a></li>
+                </ul>
+                <hr>
+                <div class="blog_post_content">{{artigo.artigoPreview}}</div>
+                <a class="read_more_btn" ui-sref="{{artigo.urlArtigo}}" >Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- //PAGINATION -->
+    <ul class="pagination clearfix">
+        <li><a ui-sref="artigos.artigosview1" >1</a></li>
+        <li class="active"><a ui-sref="artigos.artigosview2" >2</a></li>
+        <li><a ui-sref="artigos.artigosview3" >3</a></li>
+        <!-- <li><a ui-sref="artigos.artigosview4" >4</a></li> -->
+    </ul><!-- //PAGINATION -->
+</div>

@@ -1,0 +1,74 @@
+
+		
+		
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs_block4 clearfix parallax">
+			<div class="container center">
+				<h2><b>Dúvidas</b></h2>
+			</div>
+		</section><!-- //BREADCRUMBS -->
+		
+		
+		<!-- BLOG -->
+		<section id="blog">
+			
+			<!-- CONTAINER -->
+			<div class="container">
+				
+				<!-- ROW -->
+				<div class="row" style="margin-top:10px">
+				
+					<!-- BLOG BLOCK -->
+					<div class="blog_block col-lg-9 col-md-9 padbot50">
+						
+						<!-- SINGLE BLOG POST -->
+						<div class="single_blog_post clearfix" data-animated="fadeInUp">
+							
+							<div class="single_blog_post_img"><img src="images/fit4all/duvidas1_1.jpg" alt="Duvidas" /></div>
+							
+							<div class="single_blog_post_content">
+                                &nbsp;
+                                <h4>Porque preciso de um Serviço de Treino Personalizado?</h4>
+								<p>AO treino físico é um serviço profissional, embora por vezes não pareça. Da mesma maneira que precisa de um advogado para lhe dar conta dos seus direitos, ou de um bancário para gerir as suas contas, poderá precisar de personal trainer para atingir os seus objectivos pessoais ou melhorar vários indicadores de saúde. Não lhe parece o seu bem-estar e a sua saúde motivos suficientes para obter este serviço tão ou mais rapidamente como um advogado?</p>
+								<p>A ciência no mundo do desporto está em constante actualização e é por isso que a fit4all está em contante renovação de conhecimentos para que lhe possa dar um serviço profissional de alta qualidade, em que tudo o que faz já foi testado.</p>
+                                <hr>
+                                <h4>Como poderei quantificar o meu progresso?</h4>
+								<p>Mensalmente será feita uma reavaliação para podermos controlar o seu progresso e ajustar-lhe os planos de treino.</p>
+                                <hr>
+                                <h4>Qual a diferença entre o Serviço de Treino Personalizado <span style="color:rgb(153, 194, 29)">FIT4ALL</span> e os restantes?</h4>
+								<p>Com a <span style="color:rgb(153, 194, 29)">FIT4ALL</span> não terá de se preocupar com o seu treino, nós prescrevemos-lhe um plano de treino feito especialmente para si, com todas as características especiais de cada individuo e com toda a motivação, dinamização e segurança. A rotina não se apoderará deste serviço!</p>
+                                <p>Toda a ajuda e motivação que lhe damos, e que não obtém num serviço normal, servirá para se superar e atingir os seus objectivos mais rapidamente, o que sozinho não atingiria pois poucos são aqueles que conseguem sair da sua zona de conforto de forma autónoma e conseguir os resultados que tanto anseia. O seu sucesso é o nosso trabalho!</p>
+                                <hr>
+                                <h4>Onde podemos treinar?</h4>
+                                <p>O local do treino é escolhido por si. Podemos treinar em qualquer sitio (Outdoor, ginásio ou domicilio) na zona de Lisboa e arredores.</p>
+							</div>
+							
+						</div><!-- //SINGLE BLOG POST -->
+						
+					</div><!-- //BLOG BLOCK -->
+					
+					
+					<!-- SIDEBAR -->
+					<div class="sidebar col-lg-3 col-md-3 padbot50 " ng-app="artigosApp">
+						
+						<!-- POPULAR POSTS WIDGET -->
+						<div class="sidepanel widget_popular_posts" ng-controller="artigosViewCtrl" style="margin-top:80px">
+							<h3><b>Últimos</b> Artigos</h3>
+							
+							<div class="recent_posts_widget clearfix" ng-repeat="artigo in artigos.slice(0, 3)">
+								<div class="post_item_img_widget">
+                                    <a class="title" ui-sref="{{artigo.urlArtigo}}"><img ng-src="{{artigo.imgArtigo}}" alt="FIT4ALL Artigos" /></a>
+								</div>
+								<div class="post_item_content_widget">
+									<a class="title" ui-sref="{{artigo.urlArtigo}}" >{{artigo.titleArtigo}}</a>	
+								</div>
+							</div>
+                            <hr>
+							
+						</div><!-- //POPULAR POSTS WIDGET -->
+                        
+					</div><!-- //SIDEBAR -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //BLOG -->
+	
